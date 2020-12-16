@@ -13,8 +13,8 @@
 #include "registerTable.h"
 
 
-#define BUF_SIZE			7
-#define CLOCK_BUF_SIZE		9 
+#define BUF_SIZE		7
+#define CLOCK_BUF_SIZE		9
 #define DATE_BUF_SIZE		11
 #define WEEKDAY_BUF_SIZE 	10
 
@@ -72,10 +72,11 @@ int setTime(DS3231* values)
 	i2cData[0] = decToBcd(values->second);
 	i2cData[1] = decToBcd(values->minute);
 	i2cData[2] = decToBcd(values->hour);
-	i2cData[3] = decToBcd(values->day);
-	i2cData[4] = decToBcd(values->weekday);
+	i2cData[3] = decToBcd(values->weekday);
+	i2cData[4] = decToBcd(values->day);
 	i2cData[5] = decToBcd(values->month);
 	i2cData[6] = decToBcd(values->year);
+
 
 	if(i2cWrite(rtcHandle, DS3231_REG_SEC, i2cData, BUF_SIZE) == -1)
 	{
