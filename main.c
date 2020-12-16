@@ -11,6 +11,7 @@
 #include "i2c.h"
 
 
+
 void usage(char *arg)
 {
 	printf("Usage : %s <I2C Device> <I2C Address> -<option>\r\n",arg);
