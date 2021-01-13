@@ -1,4 +1,8 @@
-
+/*
+ * i2c.c
+ *  Author: MuhammetTayyipCankaya
+ *
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
