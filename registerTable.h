@@ -1,3 +1,8 @@
+/*
+ * registerTable.h
+ *  Author: MuhammetTayyipCankaya
+ *
+ */
 #ifndef __DS3231__
 #define __DS3231__
 
