@@ -1,3 +1,8 @@
+/*
+ * ds3231.h
+ *  Author: MuhammetTayyipCankaya
+ *
+ */
 #ifndef __DS3231_H__
 #define __DS3231_H__
 
